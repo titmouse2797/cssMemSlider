@@ -103,8 +103,8 @@ transform: translateX(-100%);
 
 .round{
     background-color: var(--color-clicks-main);
-    width: 1rem;
-    height: 1rem;
+    width: 1.3rem;
+    height: 1.3rem;
     border: 0.2rem solid var(--color-clicks-main);
     border-radius: 100%;
 }
@@ -121,5 +121,26 @@ transform: translateX(-100%);
     background-color: transparent;
   }
 
-
+  @media (max-width:32em){
+    .mem-slider{
+      max-width: 18rem;
+      grid-template-areas: 
+            "a"
+            "c"
+            "b";
+      grid-template-columns: 1fr;
+      grid-template-rows: 11rem 2rem 2rem;
+      }
+  
+      .sliders,.slider{
+        border-radius: 1rem;
+      }
+      .clicks{
+        justify-self: center;
+      }
+      .texts{
+        height: 2.1rem;
+        justify-self: start;
+      }
+  }
 
